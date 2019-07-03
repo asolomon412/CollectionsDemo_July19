@@ -34,6 +34,11 @@ public class HashMapDemo {
 		for (Map.Entry<String, Double> me : items.entrySet()) {
 			System.out.println("Key: " + me.getKey() + " Value: " + me.getValue());
 		}
+		
+		// here is an alternate way to loop through a HashMap using the keys
+		for (String s: items.keySet()) {
+			System.out.println(s + " " +items.get(s));
+		}
 
 		// Maps can contain complex values
 		HashMap<String, List<String>> classes = new HashMap<>();
